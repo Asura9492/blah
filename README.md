@@ -1,9 +1,7 @@
 # Angular (4) - Shopping Basket Example
 
 
-[![Build Status](https://travis-ci.org/jonsamwell/angular-simple-shopping-cart.svg?branch=master)](https://travis-ci.org/jonsamwell/angular-simple-shopping-cart)  
-
-See it in action https://jonsamwell.github.io/angular-simple-shopping-cart/
+This is a fork of: https://jonsamwell.github.io/angular-simple-shopping-cart/. Check out his original repo, as the code here will change pretty soon. 
 
 # Architectural Summary
 
