@@ -1,23 +1,22 @@
-<div class="container">
 <div class="row">
-  <div class="col-xs-12 col-md-8">
-    <h3>iRent Marketplace</h3>
+  <div class="small-12 medium-8 columns">
+    <h3>Pick your favourite juices...</h3>
     <ul class="product-list">
       <li *ngFor="let product of products | async"
           class="product-container">
           <div class="row">
-            <div class="col-sm-3 col-md-3 text-center">
+            <div class="medium-3 columns text-center">
               <img src="./assets/{{product.id}}.jpg"
-                   class="product_image img-responsive"/>
+                   class="product_image"/>
             </div>
-            <div class="col-sm-8 col-md-8">
+            <div class="medium-9 columns">
               <h4>
                 <span class="text--bold js-product-name">{{product.name}}</span>
-                <small class="product_price js-product-price">{{product.price | currency:'USD':true}}</small>
+                <small class="product_price js-product-price">{{product.price | currency:'GBP':true}}</small>
               </h4>
               <p class="js-product-desc">{{product.description}}</p>
               <p>
-                <span *ngIf="product.ingredients" class="text--bold">ingredients:</span>
+                <span class="text--bold">ingredients:</span>
                 <br/>
                 <span *ngFor="let ingredient of product.ingredients ">
                   {{ingredient.name}} ({{ingredient.percentage}}%)
@@ -26,10 +25,10 @@
               </p>
               <p>
                 <button type="button"
-                        class="btn btn-success"
+                        class="button success large js-btn-add"
                         (click)="addProductToCart(product, 1)">Add To Cart</button>
                 <button type="button"
-                        class="btn btn-danger"
+                        class="button small js-btn-remove"
                         *ngIf="productInCart(product) | async"
                         (click)="removeProductFromCart(product, 1)">Remove item from cart</button>
               </p>
@@ -38,8 +37,7 @@
       </li>
     </ul>
   </div>
-  <div class="col-xs-12 col-md-4">
+  <div class="small-12 medium-4 columns">
     <app-shopping-cart></app-shopping-cart>
   </div>
-</div>
 </div>

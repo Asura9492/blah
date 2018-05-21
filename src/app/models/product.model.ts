@@ -12,10 +12,12 @@ export class Product {
     this.name = src.name;
     this.description = src.description;
     this.price = src.price;
-    this.ingredients = src.ingredients.map((i) => {
+    if(src.ingredients != null) {
+      this.ingredients = src.ingredients.map((i) => {
       let ingredient = new Ingredient();
       ingredient.updateFrom(i);
       return ingredient;
     });
+  }
   }
 }

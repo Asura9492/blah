@@ -14,6 +14,7 @@ import { DeliveryOptionsDataService } from "./services/delivery-options.service"
 import { ProductsDataService } from "./services/products.service";
 import { ShoppingCartService } from "./services/shopping-cart.service";
 import { LocalStorageServie, StorageService } from "./services/storage.service";
+import { MissionComponent } from './components/mission/mission.component';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -22,6 +23,7 @@ import { LocalStorageServie, StorageService } from "./services/storage.service";
     ShoppingCartComponent,
     StoreFrontComponent,
     CheckoutComponent,
+    MissionComponent,
     OrderConfirmationComponent
   ],
   imports: [

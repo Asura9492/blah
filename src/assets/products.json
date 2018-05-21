@@ -1,5 +1,11 @@
 [
   {
+    "id": "1",
+    "price": 9.99,
+    "name": "Earthbound",
+    "description": "EarthBound, also known as Mother 2 in Japan, is a 1994 Japanese role-playing video game co-developed by Ape Inc. and HAL Laboratory and published by Nintendo for the Super Nintendo Entertainment System video game console. In this game, you help Ness and his party of four travel the world to collect the 8 melodies in order to defeat the evil alien force Giygas."
+  },
+  {
     "id": "9aa113b4-1e4e-4cde-bf9d-8358fc78ea4f",
     "price": 3.50,
     "name": "Greens",

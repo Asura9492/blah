@@ -3,35 +3,396 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Angular 4 Simple Shopping Cart</title>
+  <title>E-Commerce Project</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css" integrity="sha256-itWEYdFWzZPBG78bJOOiQIn06QCgN/F0wMDcC4nOhxY="
     crossorigin="anonymous" /> -->
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=BioRhyme|Montserrat" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+ crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">
-          <h4>
-            <i class="material-icons">local_drink</i>
-            Pressed Juices, Yum!
-          </h4>
-        </li>
+  <!-- <nav class="navbar navbar-default menu-header menu-shadow" id="menu-header-demo">
+    <div class="container-fluid">
+      <div class="navbar-header pull-left">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-test" aria-expanded="false" id="menu-button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-left logo" href="javascript:;"><img src="./assets/toolkit/images/MatrixCare _Logo_2016_72dpi.png"></a>
+      </div>
+      <div class="navbar-header pull-right">
+        <ul class="nav">
+          <li class="dropdown">
+            <a href="javascript:;" class="dropdown-toggle hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username (Role) <i class="fa fa-caret-down"></i></a>
+            <a href="javascript:;" class="dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle fa-lg"></i></a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li>
+                <a href="javascript:;">Profile</a>
+                <a href="javascript:;">Change Password</a>
+                <a href="javascript:;">Log off</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix visible-xs-block visible-sm-block"></div>
+      <div class="navbar-collapse collapse navbar-centered" id="menu-test">
+        <ul class="nav navbar-nav">
+          <li><a href="/structures.html">Home</a></li>
+          <li>
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single</a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:;">Action</a></li>
+              <li><a href="javascript:;">Another action</a></li>
+              <li><a href="javascript:;">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="mega">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Images</a>
+            <ul class="dropdown-menu mega-menu-sm">
+              <li>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a href="javascript:;" class="thumbnail">
+                        <img src="https://placehold.it/150x120" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="javascript:;" class="thumbnail">
+                        <img src="https://placehold.it/150x120" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="javascript:;" class="thumbnail">
+                        <img src="https://placehold.it/150x120" />
+                      </a>
+                    </div>
+                    <div class="col-sm-6">
+                      <a href="javascript:;" class="thumbnail">
+                        <img src="https://placehold.it/150x120" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="mega">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu mega-menu-md">
+              <div class="container-fluid">
+                <div class="row">
+                  <li class="col-sm-3">
+                    <ul>
+                      <li class="category-header">Category 1</li>
+                      <li><a href="javascript:;">Category 1 Item</a></li>
+                      <li><a href="javascript:;">Category 1 Item</a></li>
+                      <li><a href="javascript:;">Category 1 Item</a></li>
+                      <li class="divider"></li>
+                      <li class="category-header">Category 2</li>
+                      <li><a href="javascript:;">Category 2 Item</a></li>
+                      <li><a href="javascript:;">Category 2 Item</a></li>
+                      <li><a href="javascript:;">Category 2 Item</a></li>
+                      <li><a href="javascript:;">Category 2 Item</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-3">
+                    <ul>
+                      <li class="category-header">Category 3</li>
+                      <li><a href="javascript:;">Category 3 Item</a></li>
+                      <li><a href="javascript:;">Category 3 Item</a></li>
+                      <li><a href="javascript:;">Category 3 Item</a></li>
+                      <li><a href="javascript:;">Category 3 Item</a></li>
+                      <li><a href="javascript:;">Category 3 Item</a></li>
+                      <li class="divider"></li>
+                      <li class="category-header">Category 4</li>
+                      <li><a href="javascript:;">Category 4 Item</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-3">
+                    <ul>
+                      <li class="category-header">Category 5</li>
+                      <li><a href="javascript:;">Category 5 Item</a></li>
+                      <li><a href="javascript:;">Category 5 Item</a></li>
+                      <li><a href="javascript:;">Category 5 Item</a></li>
+                      <li class="divider"></li>
+                      <li class="category-header">Category 6</li>
+                      <li><a href="javascript:;">Category 6 Item</a></li>
+                      <li><a href="javascript:;">Category 6 Item</a></li>
+                      <li><a href="javascript:;">Category 6 Item</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-3">
+                    <ul>
+                      <li class="category-header">Category 7</li>
+                      <li><a href="javascript:;">Category 7 Item</a></li>
+                      <li><a href="javascript:;">Category 7 Item</a></li>
+                      <li><a href="javascript:;">Category 7 Item</a></li>
+                      <li><a href="javascript:;">Category 7 Item</a></li>
+                      <li><a href="javascript:;">Category 7 Item</a></li>
+                      <li><a href="javascript:;">Category 7 Item</a></li>
+                      <li><a href="javascript:;">Category 7 Item</a></li>
+                      <li><a href="javascript:;">Category 7 Item</a></li>
+                      <li><a href="javascript:;">Category 7 Item</a></li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="mega">
+            <a href="javascript:;" class="dropdown-toggle nav-title" data-toggle="dropdown">Navigation</a>
+            <ul class="dropdown-menu mega-menu-lg">
+              <div class="container-fluid">
+                <div class="row">
+                  <li class="col-sm-3">
+                    <ul class="nav nav-stacked">
+                      <li><a href="#ms1" data-toggle="tab">First Section</a></li>
+                      <li class="active"><a href="#ms2" data-toggle="tab">Second Section</a></li>
+                      <li><a href="#ms3" data-toggle="tab">Third Section</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-9 menu-nav-divider">
+                    <div class="tab-content">
+                      <div class="tab-pane" id="ms1">
+                        <ul class="col-sm-4">
+                          <li class="category-header">First group</li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                        </ul>
+                        <ul class="col-sm-4">
+                          <li class="category-header">First group</li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                        </ul>
+                        <ul class="col-sm-4">
+                          <li class="category-header">First group</li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane active" id="ms2">
+                        <ul class="col-sm-4">
+                          <li class="category-header">Second group</li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                        </ul>
+                        <ul class="col-sm-4">
+                          <li class="category-header">Second group</li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                        </ul>
+                        <ul class="col-sm-4">
+                          <li class="category-header">Second group</li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane" id="ms3">
+                        <ul class="col-sm-4">
+                          <li class="category-header">Third group</li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                        </ul>
+                        <ul class="col-sm-4">
+                          <li class="category-header">Third group</li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                        </ul>
+                        <ul class="col-sm-4">
+                          <li class="category-header">Third group</li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="mega">
+            <a href="javascript:;" class="dropdown-toggle nav-title" data-toggle="dropdown">Dynamic</a>
+            <ul class="dropdown-menu mega-menu-lg">
+              <div class="container-fluid">
+                <div class="row">
+                  <li class="col-sm-3">
+                    <ul class="nav nav-stacked">
+                      <li><a href="#ms4" data-toggle="tab">First Section</a></li>
+                      <li class="active"><a href="#ms5" data-toggle="tab">Second Section</a></li>
+                      <li><a href="#ms6" data-toggle="tab">Third Section</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-9 menu-nav-divider">
+                    <div class="tab-content">
+                      <div class="tab-pane" id="ms4">
+                        <ul class="col-xs-12" id="dynamic-mega-menu-items">
+                          <li class="category-header">First group</li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li class="category-header">First group</li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li class="category-header">First group</li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                          <li><a href="javascript:;">First Section Item</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane active" id="ms5">
+                        <ul class="col-xs-12" id="dynamic-mega-menu-items">
+                          <li class="category-header">Second group</li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li class="category-header">Second group</li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li class="category-header">Second group</li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                          <li><a href="javascript:;">Second Section Item</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane" id="ms6">
+                        <ul class="col-xs-12" id="dynamic-mega-menu-items">
+                          <li class="category-header">Third group</li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li class="category-header">Third group</li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li class="category-header">Third group</li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                          <li><a href="javascript:;">Third Section Item</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+  <!-- <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="/"><img src = "/assets/iRent_Logo3.jpg" height="70" width="70"></img></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="mission">Mission</a></li>
       </ul>
     </div>
-  </div>
+  </nav> -->
+  
   <div class="row">
     <div class="small-12 columns">
       <app-root>loading....<app-root>

@@ -1,5 +1,6 @@
+
 <div class="row">
-  <div class="small-12 columns">
+  <div class="col-xs-12">
     <h3>
       <i class="material-icons">shopping_basket</i>
       Your Shopping Basket
@@ -8,28 +9,30 @@
 </div>
 <br/>
 <div class="row">
-  <div class="small-12 columns">
+  <div class="col-xs-12">
     <h5>
       Sub Total ({{itemCount}} items):
-      <span class="text--red text--bold js-cart-total">{{(cart | async).grossTotal | currency:'GBP':true}}</span>
+      <span class="text--red text--bold js-cart-total">{{(cart | async).grossTotal | currency:'USD':true}}</span>
     </h5>
   </div>
 </div>
 <br/>
 <div class="row">
-  <div class="small-12 columns">
+  <div class="col-xs-12">
     <a class="success button large expanded"
        [attr.disabled]="itemCount === 0 ? true : null"
        routerLink="/checkout">Proceed To Checkout</a>
   </div>
 </div>
+<br>
 <div class="row">
-  <div class="small-12 columns text-center">
+  <div class="col-xs-12">
     or
   </div>
 </div>
+<br>
 <div class="row">
-  <div class="small-12 columns">
+  <div class="col-xs-12 columns">
     <button type="button"
             class="secondary button small expanded js-btn-empty-cart"
             (click)="emptyCart()"
