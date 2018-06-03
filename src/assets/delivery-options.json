@@ -22,5 +22,17 @@
     "name": "Pick-up",
     "description": "Pick it up tomorrow from you local post office",
     "price": 0
+  },
+  {
+    "id": "4",
+    "name": "Rent 3 items or less",
+    "description": "These items will be for rent, and no additional shipping cost will apply.",
+    "price": 0
+  },
+  {
+    "id": "5",
+    "name": "Rent More Than 3 Items",
+    "description": "Note: These items will be for rent. Renting this amount at once will incur an additional shipping cost.",
+    "price": 10.00
   }
 ]

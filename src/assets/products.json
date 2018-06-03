@@ -6,6 +6,18 @@
     "description": "EarthBound, also known as Mother 2 in Japan, is a 1994 Japanese role-playing video game co-developed by Ape Inc. and HAL Laboratory and published by Nintendo for the Super Nintendo Entertainment System video game console. In this game, you help Ness and his party of four travel the world to collect the 8 melodies in order to defeat the evil alien force Giygas."
   },
   {
+    "id": "7",
+    "price": 70.00,
+    "name": "Wilson Tennis Racquet",
+    "description": "A professional grade tennis racquet for all kinds of players."
+  },
+  {
+    "id": "8",
+    "price": 50.00,
+    "name": "Harry Potter Book Collection",
+    "description": "In this popular series, written by J.K. Rowling, explore the wizarding world of Harry Potter, and follow along the stories of Harry, Ron, and Hermione, as they study in Hogwarts: School for Witchcraft and Wizardry, and try and defeat the evil Lord Voldemort."
+  },
+  {
     "id": "9aa113b4-1e4e-4cde-bf9d-8358fc78ea4f",
     "price": 3.50,
     "name": "Greens",

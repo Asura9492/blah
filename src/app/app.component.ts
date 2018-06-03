@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
   selector: "app-root",
   // template: "<router-outlet></router-outlet>"
   template: `<nav class="navbar navbar-default menu-header menu-shadow" id="menu-header-demo">
-  <div class="container-fluid">
+  <div class="container-fluid" style="padding-left: 0;">
     <div class="navbar-header pull-left">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-test" aria-expanded="false" id="menu-button">
         <span class="icon-bar"></span>
